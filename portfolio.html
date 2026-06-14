@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supriya Tandukar - Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=VT323&family=IM+Fell+English:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- VHS noise overlay -->
+  <div class="vhs-overlay" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ── TITLE SCREEN ── -->
+  <section id="title-screen" class="screen active">
+    <div class="vhs-hud">
+      <span class="hud-left">
+        <span class="hud-play">&#9654; PLAY</span><br />
+        <span class="hud-time" id="vhs-time">00:00:00</span>
+      </span>
+      <span class="hud-right">
+        IFF<br />VHS
+      </span>
+    </div>
+
+    <div class="title-center">
+      <div class="title-eyebrow">A portfolio</div>
+      <h1 class="title-name">Supriya Tandukar</h1>
+      <div class="title-sub">creative developer &amp; builder of things</div>
+
+      <div class="petal-row" aria-hidden="true">
+        <span class="petal">&#10045;</span>
+        <span class="petal">&#10045;</span>
+        <span class="petal">&#10045;</span>
+      </div>
+
+      <nav class="main-menu" role="navigation" aria-label="Main menu">
+        <button class="menu-btn" data-target="about">
+          <span class="menu-cursor">&#9658;</span>
+          <span class="menu-label">new game</span>
+          <span class="menu-hint">about me</span>
+        </button>
+        <button class="menu-btn" data-target="skills">
+          <span class="menu-cursor">&#9658;</span>
+          <span class="menu-label">load game</span>
+          <span class="menu-hint">skills</span>
+        </button>
+        <button class="menu-btn" data-target="projects">
+          <span class="menu-cursor">&#9658;</span>
+          <span class="menu-label">continue</span>
+          <span class="menu-hint">projects</span>
+        </button>
+        <button class="menu-btn" data-target="contact">
+          <span class="menu-cursor">&#9658;</span>
+          <span class="menu-label">settings</span>
+          <span class="menu-hint">contact</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="vhs-hud vhs-hud-bottom">
+      <span class="hud-date" id="vhs-date">JUN 14.2025</span>
+      <span class="hud-rhs">kathmandu, np</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT SCREEN ── -->
+  <section id="about" class="screen">
+    <button class="back-btn" data-target="title-screen">&#9664; back</button>
+    <div class="screen-content">
+      <div class="section-tape">about me</div>
+
+      <div class="about-layout">
+        <div class="about-card botanical-card">
+          <div class="player-badge">PLAYER ONE</div>
+          <div class="about-name">Supriya Tandukar</div>
+          <div class="about-role">creative developer</div>
+          <div class="about-divider"></div>
+          <p class="about-bio">
+            Hey, i'm supriya - a builder obsessed with making things that feel alive.
+            i love anime aesthetics, writing tools that spark imagination, and
+            projects where design and code blur together.
+          </p>
+          <p class="about-bio">
+            currently leveling up in python, web scraping, machine learning,frontend development, etc.
+            based in bhaktapur, nepal. always open to cool collabs.
+          </p>
+          <div class="stat-row">
+            <div class="stat-block">
+              <div class="stat-val">∞</div>
+              <div class="stat-key">ideas</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-val">2+</div>
+              <div class="stat-key">years coding</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-val">lv.99</div>
+              <div class="stat-key">creativity</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-deco" aria-hidden="true">
+          <div class="film-frame">
+            <div class="film-inner">
+              <div class="film-emoji">&#127827;</div>
+              <div class="film-emoji">&#127807;</div>
+              <div class="film-emoji">&#128218;</div>
+              <div class="film-emoji">&#9733;</div>
+            </div>
+            <div class="film-label">aitsyrup.exe — est. 2004</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS SCREEN ── -->
+  <section id="skills" class="screen">
+    <button class="back-btn" data-target="title-screen">&#9664; back</button>
+    <div class="screen-content">
+      <div class="section-tape">skill tree</div>
+
+      <div class="skills-layout">
+        <div class="skill-group">
+          <div class="skill-group-title">// frontend</div>
+          <div class="skill-item" data-level="88">
+            <span class="skill-name">HTML / CSS</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.88</span>
+          </div>
+          <div class="skill-item" data-level="72">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.72</span>
+          </div>
+          <div class="skill-item" data-level="68">
+            <span class="skill-name">UI design</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.68</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">// backend & tools</div>
+          <div class="skill-item" data-level="65">
+            <span class="skill-name">Python</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.65</span>
+          </div>
+          <div class="skill-item" data-level="60">
+            <span class="skill-name">Web scraping</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.60</span>
+          </div>
+          <div class="skill-item" data-level="55">
+            <span class="skill-name">Git / GitHub</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.55</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">// soft skills</div>
+          <div class="skill-item" data-level="99">
+            <span class="skill-name">Creativity</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.99</span>
+          </div>
+          <div class="skill-item" data-level="85">
+            <span class="skill-name">Attention to detail</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.85</span>
+          </div>
+          <div class="skill-item" data-level="80">
+            <span class="skill-name">Fast learner</span>
+            <div class="skill-track"><div class="skill-bar"></div></div>
+            <span class="skill-lv">lv.80</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS SCREEN ── -->
+  <section id="projects" class="screen">
+    <button class="back-btn" data-target="title-screen">&#9664; back</button>
+    <div class="screen-content">
+      <div class="section-tape">quest log</div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-status status-done">completed</div>
+          <div class="project-icon">&#128220;</div>
+          <h3 class="project-title">BhasaBelle</h3>
+          <p class="project-desc">a story writer with typewriter fonts, aged paper tones, and a drawing layer. built for writers who want atmosphere.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-status status-done">completed</div>
+          <div class="project-icon">&#128027;</div>
+          <h3 class="project-title">a price tracker</h3>
+          <p class="project-desc">a python web scraper that tracks product prices, stores price history, and sends alerts when prices drop. built in jupyter notebook.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">BeautifulSoup</span>
+            <span class="tag">Jupyter</span>
+          </div>
+        </div>
+
+        <div class="project-card project-card--locked">
+          <div class="project-status status-locked">in progress</div>
+          <div class="project-icon">&#10711;</div>
+          <h3 class="project-title">??? unlocking soon</h3>
+          <p class="project-desc">a new quest is being written. check back when the next chapter drops...</p>
+          <div class="project-tags">
+            <span class="tag">???</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT SCREEN ── -->
+  <section id="contact" class="screen">
+    <button class="back-btn" data-target="title-screen">&#9664; back</button>
+    <div class="screen-content">
+      <div class="section-tape">send signal</div>
+
+      <div class="contact-layout">
+        <div class="contact-note">
+          <p class="contact-prose">
+            i usually reply within a day or two.<br />
+            let's build something weird and beautiful together.
+          </p>
+          <div class="petal-row" aria-hidden="true">
+            <span class="petal sm">&#10045;</span>
+            <span class="petal sm">&#10045;</span>
+          </div>
+        </div>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-icon-label">email</span>
+            <a href="mailto:tandukarsupriya@gmail.com" class="contact-link">tandukarsupriya@gmail.com</a>
+            <button class="copy-tag" data-copy="tandukarsupriya@gmail.com">copy</button>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon-label">github</span>
+            <a href="https://github.com/supriyatandukar" target="_blank" rel="noopener" class="contact-link">github.com/supriyatandukar</a>
+            <button class="copy-tag" data-copy="github.com/supriyatandukar">copy</button>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon-label">linkedin</span>
+            <a href="https://www.linkedin.com/in/supriya-t-7188432a2/" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/supriya-t-7188432a2/</a>
+            <button class="copy-tag" data-copy="linkedin.com/in/supriya-t-7188432a2/">copy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="vhs-stamp">&#9654; signal open — press to connect</div>
+    </div>
+  </section>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
